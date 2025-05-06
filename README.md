@@ -1,58 +1,56 @@
 # linkedin-solvers
-Solvers for LinkedIn daily games, written in Python.
+Solvers for LinkedIn games, written in Python.
 
-## Tango
-Solver for Tango game on LinkedIn. The program accepts text or image inputs. Also works to solve puzzles from the Tango iOS app.
+## Tango Solver
+Solver for Tango (aka Binairo+).
 
-### LinkedIn
+The solver works for [LinkedIn's Tango](https://www.linkedin.com/games/tango/), the Tango app ([iOS](https://apps.apple.com/us/app/tango-daily-binairo-puzzle), [Android](https://play.google.com/store/apps/details?id=com.iwp.tango)) and [Puzzle Binairo](https://www.puzzle-binairo.com/binairo-plus-6x6-easy/) (text only).
+
+The program accepts text or puzzle screenshots as input.
+
+### Example - LinkedIn Tango
 This puzzle was solved in 4 ms.
-Image parsing takes 0.3 seconds.
 
-**Input**
+Image parsing took 0.3 seconds.
 
-![](tango/screenshots/linkedin-210-input.png)
+#### Input
 
-**Output**
+<img src="tango/screenshots/linkedin-210-input.png" alt="" width="300">
 
-![](tango/screenshots/linkedin-210-solved.png)
+#### Solution
 
-### Tango App
+<img src="tango/screenshots/linkedin-210-solved.png" alt="" width="300">
+
+### Example - Tango App
 This puzzle was solved in 0.07 seconds.
-Image parsing takes 0.6 seconds.
 
-**Input**
+Image parsing took 0.6 seconds.
 
-![](tango/screenshots/tango-genius-2-input.png)
+#### Input
+<img src="tango/screenshots/tango-genius-2-input.png" alt="" width="300">
 
-**Output**
+#### Solution
+<img src="tango/screenshots/tango-genius-2-solved.png" alt="" width="300">
 
-![](tango/screenshots/tango-genius-2-solved.png)
+### Algorithm
+To solve the game, the program applies a set of deduction strategies over and over until it gets stumped. 
 
-### How does it work?
-#### Input parsing - Text
+Then, it makes a guess on an unknown cell and continues solving recursively. If solving runs into a contradiction, we know our guess is incorrect. This continues until we have a complete and valid board.
 
-For text inputs, parsing is straightforward. Here's an example .txt input:
+This combination of known deduction strategies and recursive backtracking improves program performance while ensuring that even very challenging puzzles will be solved.
 
-![](tango/screenshots/linkedin-210-text.png)
+### Example Flow
+#### 1A. Text Input
+<img src="tango/screenshots/linkedin-210-text.png" alt="Text input" width="100">
 
-#### Input parsing - Images
+#### 1B. Image Input
+<img src="tango/screenshots/linkedin-210-input.png" alt="Image input" width="300">
 
-For image inputs, the program finds all the cells and edges of the board using OpenCV.
+##### 2. Image Parsing (OpenCV)
+<img src="tango/screenshots/linkedin-210-debug.png" alt="Debug image" width="300">
 
-Here's what the program "sees" when parsing an image:
+#### 3. Initial Board
+<img src="tango/screenshots/linkedin-210-parsed.png" alt="" width="300">
 
-![](tango/screenshots/linkedin-210-debug.png)
-
-#### Puzzle data structure
-
-We store the parsed cells and edges in a puzzle object. Here's what a puzzle looks after parsing:
-
-![](tango/screenshots/linkedin-210-parsed.png)
-
-#### Solution algorithm
-
-To solve the game, it applies a few simple deduction strategies over and over until it gets stumped. Then, it just makes a guess on an unknown cell and continues solving. If solving the puzzle with that guess runs into a contradiction, we know the cell must be the other symbol. This continues until we have a complete and valid board. The algorithm is a type of recursive backtracking.
-
-Here's an example output of the program
-
-![](tango/screenshots/linkedin-210-solved.png)
+#### 4. Solution
+<img src="tango/screenshots/linkedin-210-solved.png" alt="" width="300">
