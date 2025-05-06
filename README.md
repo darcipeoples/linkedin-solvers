@@ -9,29 +9,29 @@ This puzzle was solved in 0.5 seconds.
 
 **Input**
 
-![](tango/img/linkedin-210-input.png)
+![](tango/screenshots/linkedin-210-input.png)
 
 **Output**
 
-![](tango/img/linkedin-210-solved.png)
+![](tango/screenshots/linkedin-210-solved.png)
 
 ### Tango App
 This puzzle was solved in 0.9 seconds.
 
 **Input**
 
-![](tango/img/tango-genius-2-input.png)
+![](tango/screenshots/tango-genius-2-input.png)
 
 **Output**
 
-![](tango/img/tango-genius-2-solved.png)
+![](tango/screenshots/tango-genius-2-solved.png)
 
 ### How does it work?
 #### Input parsing - Text
 
 For text inputs, parsing is straightforward. Here's an example .txt input:
 
-![](tango/img/linkedin-210-text.png)
+![](tango/screenshots/linkedin-210-text.png)
 
 #### Input parsing - Images
 
@@ -39,13 +39,13 @@ For image inputs, the program finds all the cells and edges of the board using O
 
 Here's what the program "sees" when parsing an image:
 
-![](tango/img/linkedin-210-debug.png)
+![](tango/screenshots/linkedin-210-debug.png)
 
 #### Puzzle data structure
 
 We store the parsed cells and edges in a puzzle object. Here's what a puzzle looks after parsing:
 
-![](tango/img/linkedin-210-parsed.png)
+![](tango/screenshots/linkedin-210-parsed.png)
 
 #### Solution algorithm
 
@@ -53,4 +53,4 @@ To solve the game, it applies a few simple deduction strategies over and over un
 
 Here's an example output of the program
 
-![](tango/img/linkedin-210-solved.png)
+![](tango/screenshots/linkedin-210-solved.png)
