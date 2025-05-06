@@ -5,7 +5,8 @@ Solvers for LinkedIn daily games, written in Python.
 Solver for Tango game on LinkedIn. The program accepts text or image inputs. Also works to solve puzzles from the Tango iOS app.
 
 ### LinkedIn
-This puzzle was solved in 0.5 seconds.
+This puzzle was solved in 4 ms.
+Image parsing takes 0.3 seconds.
 
 **Input**
 
@@ -16,7 +17,8 @@ This puzzle was solved in 0.5 seconds.
 ![](tango/screenshots/linkedin-210-solved.png)
 
 ### Tango App
-This puzzle was solved in 0.9 seconds.
+This puzzle was solved in 0.07 seconds.
+Image parsing takes 0.6 seconds.
 
 **Input**
 
