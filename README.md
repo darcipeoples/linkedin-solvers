@@ -21,10 +21,12 @@ Puzzle solved in 4 ms.
 Puzzle solved in 70 ms.
 
 **Input**
+
 <img src="tango/screenshots/tango-genius-2-input.png" alt="" width="300">
 
 
 **Output**
+
 <img src="tango/screenshots/tango-genius-2-solved.png" alt="" width="300">
 
 
