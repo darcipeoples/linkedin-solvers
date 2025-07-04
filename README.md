@@ -9,11 +9,11 @@ Puzzle solved in 4 ms.
 
 **Input**
 
-<img src="tango/screenshots/linkedin-210-input.png" alt="" width="300">
+<img src="tango/screenshots/linkedin-2025-05-05-input.png" alt="" width="300">
 
 **Output**
 
-<img src="tango/screenshots/linkedin-210-solved.png" alt="" width="300">
+<img src="tango/screenshots/linkedin-2025-05-05-solved.png" alt="" width="300">
 
 ### Example (Tango App)
 Puzzle solved in 70 ms.
