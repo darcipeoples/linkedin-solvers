@@ -33,7 +33,7 @@ Puzzle solved in 70 ms.
 The second solver is for [LinkedIn's Queens](https://www.linkedin.com/games/queens/) game. It can solve text or image inputs.
 
 ### Example
-Puzzle solved in 16 ms.
+Puzzle solved in 14 ms.
 
 **Input**
 
