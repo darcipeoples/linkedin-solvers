@@ -37,11 +37,11 @@ Puzzle solved in 92 ms.
 
 **Input**
 
-<img src="queens/screenshots/2025-05-28-input.png" alt="" width="300">
+<img src="queens/screenshots/2025-05-25-B-input.png" alt="" width="300">
 
 **Output**
 
-<img src="queens/screenshots/2025-05-28-solved.png" alt="" width="300">
+<img src="queens/screenshots/2025-05-25-B-solved.png" alt="" width="300">
 
 # How do they work?
 To solve the games, each program applies a set of simple deduction strategies over and over until it gets stumped.
