@@ -3,8 +3,8 @@ import numpy as np
 import cv2
 
 # Format a string with ANSI color for pretty text output
-def fmt(string: str, code: int, bg=False, reset=True):
-  return u"\u001b[" + f"{48 if bg else 38};5;{code}m{string}" + ("\u001b[0m" if reset else "")
+def fmt(string: str, code: int, bg=False, reset=True, bold=False):
+  return (u"\u001b[1m" if bold else "") + u"\u001b[" + f"{48 if bg else 38};5;{code}m{string}" + ("\u001b[0m" if reset else "")
 
 # Check if inner box is contained in the outer box
 def is_contained(inner, outer):

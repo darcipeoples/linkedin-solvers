@@ -1,5 +1,6 @@
 # Project files
 .DS_Store
+*nocommit/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
